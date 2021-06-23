@@ -1,0 +1,127 @@
+@import "variables";
+
+.payout-content{
+    margin-top: 50px;
+}
+
+.text-flex{
+    display: flex;
+}
+
+.payout-text-flex{
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 21px;
+    margin-top: 29px;
+    p{
+        &:not(:last-child){
+            padding-right: 64px;
+        }
+    }
+}
+
+.payout-price{
+    display: flex;
+    align-items: center;
+    margin-top: 40px;
+    img{
+        padding-left: 15px;
+    }
+}
+
+.extralarge-text{
+    font-weight: bold;
+    font-size: 50px;
+    line-height: 60px;
+    color: #000A12;
+}
+
+.price-estimated{
+    text-align: center;
+    margin-left: 24px;
+    width: 66px;
+    height: 19px;
+    padding: 4px 10px;
+    background: $orange;
+    border-radius: 3px;
+    p{
+        font-weight: 500;
+        font-size: 9px;
+        line-height: 11px;
+        color: #FFFFFF;
+    }
+}
+
+.list__item-payouts{
+    position: relative;
+    margin-top: 200px;
+}
+
+.payout-past{
+    position: absolute;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    text-align: center;
+    &::before{
+        content: '';
+        position: absolute;
+        top: -120px;
+        bottom: 0;
+        left: 49%;
+        width: 32px;
+        background-image: url(assets/img/filter-reviews.svg);
+        background-repeat: no-repeat;
+        background-position: center center;
+    }
+}
+
+.security-modal{
+    .modal__wrapper{
+        width: 600px;
+        padding: 0;
+    }
+    .list__item{
+        padding: 0;
+    }
+    p{
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 21px;
+    }
+}
+
+.security-modal-header{
+    text-align: center;
+    text-align: -webkit-center;
+    padding: 45px 0;
+    background: $orange;
+    p{
+        padding-top: 38px;
+        color: #FFFFFF;
+    }
+}
+
+.security-modal-content{
+    padding: 16px 40px !important;
+}
+
+.security-modal-text{
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 21px;
+}
+
+.security-modal-footer{
+    text-align: right;
+    display: block;
+    margin-top: 26px;
+    padding-top: 25px;
+    padding-right: 40px;
+    a{
+        &:not(:first-child){
+            margin-left: 24px;
+        }
+    }
+}

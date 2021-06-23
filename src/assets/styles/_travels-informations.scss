@@ -1,0 +1,128 @@
+#pasport-details-radio{
+    display: none;
+}
+
+.text-halper{
+    display: flex;
+    p{
+        padding-right: 8px;
+    }
+}
+
+.travels-info-text{
+    margin-top: 39px;
+    margin-bottom: 29px;
+}
+
+.question-text{
+    width: 145px;
+    &::after{
+        content: '';
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            right: 0;
+            width: 18px;
+            height: 18px;
+            background-image: url(assets/img/question-mark.svg);
+            background-repeat: no-repeat;
+            background-position: center right;
+    }
+}
+
+.collect-auto-text {
+    font-size: 18px;
+    &__text {
+        color: #8C8C8C;
+    }
+    &:not(:last-child){
+        margin-bottom: 12px;
+    }
+    p{
+        position: relative;
+        padding-left: 22px;
+        &:first-child::before{
+            content: '';
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            width: 32px;
+            background-image: url(assets/img/check-mark.svg);
+            background-repeat: no-repeat;
+            background-position: center left;
+        }
+    }
+}
+
+.chckbox-item{
+    .list__item-radio{
+        padding-left: 32px;
+    }
+}
+
+.checkbox-prompt:not(:last-child){
+    padding-left: 32px;
+    border-bottom: none;
+}
+
+.see-more-btn{
+    border: none;
+    background: none;
+    position: relative;
+    color: $gray;
+    &:hover{
+        color: $orange;
+    }
+}
+
+.see-more-close{
+    &::after{
+        content: '';
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        right: -23px;
+        width: 18px;
+        height: 18px;
+        background-image: url(assets/img/show-medium.svg);
+        background-repeat: no-repeat;
+        background-position: center right;
+    }
+}
+
+.see-more-open{
+    &::after{
+        content: '';
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        right: -23px;
+        width: 18px;
+        height: 18px;
+        background-image: url(assets/img/show-medium.svg);
+        background-repeat: no-repeat;
+        background-position: center right;
+        transform: rotateX(180deg);
+    }
+}
+
+#see-more-text{
+    display: none;
+}
+
+.more-information{
+    margin-top: 42px;
+    .chckbox-item{
+        .checkbox-prompt{
+            padding-left: 32px;
+        }
+    }
+    .text{
+        margin-bottom: 15px;
+    }
+}
+
+.ship__information{
+    margin-top: 32px;
+}

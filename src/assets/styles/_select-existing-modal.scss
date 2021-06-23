@@ -1,0 +1,30 @@
+#SelectExistingModal{
+    .title{
+        padding-bottom: 34px;
+        border-bottom: 1px solid #ECECEC;
+    }
+    .modal__wrapper{
+        width: 600px;
+    }
+    .list__item-radio label {
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 21px;
+    }
+    .footer-border{
+        margin-top: 72px;
+    }
+    .list__item-content{
+        margin-top: 40px;
+    }
+}
+
+.option-description{
+    .text{
+        margin-left: 40px;
+    }
+}
+
+.option-sub{
+    color: #999999;
+}

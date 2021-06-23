@@ -1,0 +1,146 @@
+#specialOfferModal{
+    display: none;
+}
+
+#specialOfferModal2{
+    display: none;
+}
+
+.special-offer-modal{
+    .modal__wrapper{
+        width: 1152px;
+        overflow: visible;
+    }
+    &.modal .list__item .text {
+        width: auto;
+    }
+}
+
+#date-range-ok{
+    display: none;
+}
+
+.list__item-main-content{
+    border-top: 1px solid #EBEBEB;
+}
+
+.text-halper{
+    margin-top: 37px;
+}
+
+.calendar-blocks{
+    display: flex;
+    margin-top: 18px;
+    align-items: center;
+}
+
+.dash{
+    font-size: 18px;
+    padding: 0 7px;
+}
+
+.calendar{
+    display: flex;
+    align-items: center;
+    padding-left: 16px;
+    width: 202px;
+    height: 45px;
+    background: #FFFFFF;
+    border: 1px solid #EBEBEB;
+    border-radius: 4px;
+    img{
+        margin-top: -2px;
+        padding-right: 17px;
+    }
+}
+
+.clear-date{
+    font-size: 18px;
+    line-height: 22px;
+    color: $orange;
+    padding-left: 19px;
+}
+
+.enter__discount{
+    padding: 26px;
+    background: #FFFFFF;
+    border: 1px solid #EBEBEB;
+    box-sizing: border-box;
+    border-radius: 4px;
+}
+
+.enter__discount-content{
+    margin-top: 29px;
+}
+
+.discount-input-block{
+    display: flex;
+    margin-top: 14px;
+}
+
+//input[type="text"] {
+//    font-weight: 500;
+//    font-size: 18px;
+//    line-height: 21px;
+//    height: 35px;
+//	border: 1px solid #D9D9D9;
+//    border-radius: 4px;
+//    font-size: 18px;
+//}
+
+#discount-input{
+    padding-left: 16px;
+	width: 79px;
+}
+
+input[type=text]::-webkit-inner-spin-button, 
+input[type=text]::-webkit-outer-spin-button { 
+  
+  margin: 0; 
+}
+
+.discount__item-content{
+    display: flex;
+    align-items: flex-start;
+    .special-offer-sentence{
+        margin: 0;
+    }
+}
+
+.discount-input-percent{
+    padding: 6px 8px;
+    background: #FFFFFF;
+    border: 1px solid #D9D9D9;
+    box-sizing: border-box;
+    border-radius: 0px 4px 4px 0px;
+    margin-left: -5px;
+    p{
+        font-weight: normal;
+        font-size: 18px;
+        line-height: 21px;
+    }
+}
+
+.discount-price-block{
+    padding-top: 20px;
+    display: flex;
+    p{
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 21px;
+        &:first-child{
+            padding-right: 18px;
+        }
+    }
+    .old-price{
+        color: $gray;
+    }
+}
+
+.discount__item-col{
+    &:first-child{
+        width: 711px;
+        margin-right: 52px;
+        margin-top: 37px;
+    }
+}

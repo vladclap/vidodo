@@ -1,0 +1,42 @@
+.title {
+    font-size: 24px;
+    font-weight: 700;
+    margin: 0.375em 0;
+}
+
+.list__item:not(:last-child) {
+    border-bottom: 1px solid #EBEBEB;
+}
+
+ul.dot li {
+    position: relative;
+    padding-left: 13px;
+}
+  
+ul.dot li:before {
+    content: '';
+    position: absolute;
+    top: calc(50% - 3px);
+    left: 0;
+    width: 5px;
+    height: 5px;
+    background: black;
+    border-radius: 50%;
+}
+
+ul.dot-orange li:before{
+    width: 7px;
+    height: 7px;
+    background: $orange;
+}
+
+.text-indent{
+    margin-top: 16px;
+}
+
+.ul-wrapper{
+    display: flex;
+    li{
+        margin-right: 116px;
+    }
+}

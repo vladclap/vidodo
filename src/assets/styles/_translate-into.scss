@@ -1,0 +1,37 @@
+.step{
+    color: $gray;
+    font-size: 14px;
+}
+
+.no-head-wrapper{
+    padding-top: 100px;
+}
+
+.gray-textarea{
+    background: #F0F0F0;
+}
+
+.white-textarea{
+    background: white;
+}
+
+.textarea-translate{
+    display: flex;
+    textarea{
+        height: 79px;
+        &:not(:last-child){
+            margin-right: 25px;
+        }
+    }
+}
+
+.full-width{
+    padding: 0;
+    width: 100%;
+}
+
+.translate-content{
+    &:not(:first-child){
+        margin-top: 40px;
+    }
+}

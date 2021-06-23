@@ -1,0 +1,38 @@
+.instruction-add{
+    margin-top: 45px;
+}
+
+.optional{
+    &::after{
+        content: '(optional)';
+        right: 0;
+        top: 0;
+        color: $gray;
+        padding-left: 15px;
+    }
+}
+
+textarea {
+    margin-top: 16px;
+    width: 100%;
+    min-height: 123px;
+    padding: 12px;
+    border: 1px solid #D9D9D9;
+    border-radius: 8px;
+    resize: none;
+}
+
+.ticket-textarea{
+    height: 100px;
+}
+
+.textarea-prompt{
+    font-size: 12px;
+    padding-left: 0;
+    border: none;
+}
+
+.no-indent{
+    margin: 0;
+    padding: 0;
+}

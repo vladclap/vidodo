@@ -1,0 +1,26 @@
+.modal-translate{
+    .modal__wrapper{
+        width: 454px;
+    }
+    .choices{
+        margin: 0;
+        .choices-wrapper{
+            width: 100%;
+        }
+        .choices-wrapper select {
+            min-width: 100%;
+        }
+    }
+    .list__item{
+        padding-right: 70px;
+    }
+    .big-title{
+        font-size: 30px;
+    }
+}
+
+.modal__footer-translate{
+    float: right;
+    margin-top: 100px;
+    padding-bottom: 50px;
+}

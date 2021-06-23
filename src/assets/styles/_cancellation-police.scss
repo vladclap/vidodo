@@ -1,0 +1,124 @@
+.title-indent{
+    margin-bottom: 24px;
+}
+
+.warning{
+    margin-top: 16px;
+    border: 2px solid #FF5134;
+    border-radius: 8px;
+    p{
+        position: relative;
+        font-size: 18px;
+        line-height: 21px;
+        width: 617px;
+        padding: 20px 37px 20px 64px;
+        &::before{
+            content: '';
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 19px;
+            width: 32px;
+            background-image: url(assets/img/info.svg);
+            background-repeat: no-repeat;
+            background-position: center left;
+        }
+    }
+}
+
+.list__item-radio{
+    display: flex;
+    align-items: center;
+    label{
+        font-size: 15px;
+        padding-left: 20px;
+        padding-right: 12px;
+    }
+    &:not(:first-child){
+        padding-top: 11px;
+    }
+}
+
+input[type='radio'],
+label {
+  cursor: pointer;
+}
+
+input[type='radio'] {
+  position: relative;
+  height: 20px;
+  width: 20px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  outline: none;
+}
+
+input[type='radio']::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  border: 1px solid $orange;
+}
+
+input[type='radio']:checked::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 13px;
+  height: 13px;
+  border-radius: 50%;
+  background-color: $orange;
+  transform: translate(-50%, -50%);
+  visibility: visible;
+}
+
+.recommended{
+    position: relative;
+    top: -2px;
+    background: #FF5134;
+    border-radius: 3px;
+    padding: 2px 9px;
+    color: white;
+    font-size: 12px;
+}
+
+.prompt{
+    padding-top: 8px;
+    padding-left: 40px;
+    margin-bottom: 11px;
+    padding-bottom: 17px;
+    color: #999999;
+    border-bottom: 1px solid #E4E4E4;
+  &_booking {
+    margin-top: 1px;
+    margin-bottom: 11px;
+    padding-top: 0;
+    padding-bottom: 0;
+    border-bottom: none;
+  }
+  &__text {
+    font-size: 1rem;
+    color: #1E2843;
+  }
+}
+
+//.option{
+//    font-weight: 700;
+//    color: $orange;
+//}
+
+.list__item-checkboxes{
+    margin-top: 32px;
+}
+
+.chckbox-item{
+    margin-bottom: 11px;
+}

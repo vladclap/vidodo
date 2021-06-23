@@ -1,0 +1,40 @@
+@import "variables";
+
+.tab {
+  margin-top: 19px;
+}
+
+.tab__list, .tabs-component-tabs {
+  display: flex;
+  border-bottom: 1px solid $light;
+  font-size: 0.777rem;
+}
+
+.tab__link, .tabs-component-tab {
+  margin-bottom: -1px;
+  padding-bottom: 6px;
+  border-bottom: 2px solid transparent;
+  cursor: pointer;
+  color: #1E2843;
+  &:not(:first-child) {
+    margin-left: 40px;
+  }
+  &.active, &.is-active {
+    border-bottom: 2px solid $acc;
+    font-weight: 700;
+  }
+  a {
+    color: #1E2843;
+  }
+}
+
+.tab__content{
+  display: none;
+  visibility: hidden;
+  opacity: 0;
+  &.active{
+    display: block;
+    visibility: visible;
+    opacity: 1;
+  }
+}

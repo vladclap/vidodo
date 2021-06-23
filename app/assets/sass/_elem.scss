@@ -1,0 +1,19 @@
+.elem {
+  &_w {
+    &_100 {
+      max-width: 100px;
+    }
+    &_200 {
+      max-width: 200px;
+    }
+    &_380 {
+      max-width: 380px;
+    }
+    &_555 {
+      max-width: 555px;
+    }
+    &_750 {
+      max-width: 750px;
+    }
+  }
+}

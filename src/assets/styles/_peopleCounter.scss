@@ -1,0 +1,66 @@
+@import "variables";
+
+.people-counter-wrapper {
+  position: relative;
+  display: inline-block;
+}
+
+.people-counter-input {
+  height: 41px;
+  width: 400px;
+  margin: 0;
+  cursor: pointer;
+}
+
+.people-counter {
+  position: absolute;
+  top: 40px;
+  left: 0;
+  width: 400px;
+  padding: 10px;
+  background-color: #fff;
+  border-radius: 4px;
+  border: 1px solid #DEE0E5;
+  z-index: 99;
+}
+
+.people-counter__line {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.people-counter__counter {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.people-counter__number {
+  width: 10px;
+  margin: 0 30px;
+}
+
+.people-counter__action {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  border: 1px solid $acc;
+  color: $acc;
+  cursor: pointer;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.people-counter__subtitle {
+  margin: 0.5em 0 0;
+  font-size: 0.8em;
+  color: #AFB1B8;
+}

@@ -1,0 +1,91 @@
+.offers-ul{
+    .prompt{
+        padding-top: 0;
+    }
+    li{
+        position: relative;
+        width: 340px;
+        &:not(:first-child){
+            margin-top: 24px;
+        }
+    }
+    &.dot{
+        li{
+            padding-left: 23px;
+            &::before{
+                top: 4px;
+            }
+        }
+    }
+}
+
+.title-radio{
+    margin-bottom: 0;
+}
+
+.special-offer-sentence{
+    width: 262px;
+    border-radius: 8px 8px 0px 0px;
+    filter: drop-shadow(0px 4px 10px rgba(0, 0, 0, 0.1));
+    margin-top: 85px;
+    margin-left: -100px;
+}
+
+.special-offer-sentence-content{
+    background: #FFFFFF;
+    border-radius: 8px;
+    margin-top: -5px;
+    padding: 10px 15px;
+    .prompt{
+        font-size: 12px;
+        padding: 0;
+        border: none;
+    }
+}
+
+.special-offer-sentence-img{
+    width: 262px;
+    height: 144px;
+    background: url('assets/img/surfing.png');
+}
+
+.old-price{
+    font-size: 16px;
+    text-decoration-line: line-through;
+}
+
+.new-price{
+    font-weight: 600;
+    font-size: 22px;
+    line-height: 26px;
+    color: $orange;
+}
+
+.price-diff{
+    font-size: 12px;
+    line-height: 14px;
+    color: $orange;
+}
+
+#offer-details{
+    display: none;
+    margin-top: 44px;
+}
+
+.offer-details-content{
+    position: relative;
+    padding-left: 40px;
+    margin-top: 20px;
+    border-top: 1px solid #D9D9D9;
+    border-bottom: 1px solid #D9D9D9;
+    a{
+        width: 16px;
+        height: 16px;
+        position: absolute;
+        top: 16px;
+        bottom: 0;
+        right: 0;
+        background-repeat: no-repeat;
+        background-position: center right;
+    }
+}

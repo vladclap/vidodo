@@ -1,0 +1,116 @@
+@import "variables";
+
+a {
+  text-decoration: none;
+  transition: 0.25s ease;
+}
+
+.link {
+  color: $acc;
+  &:hover {
+    color: #1E2843;
+    text-decoration: underline;
+  }
+}
+
+.text {
+  &_lh {
+    &_15 {
+      line-height: 1.5;
+    }
+    &_11 {
+      line-height: 1.1;
+    }
+  }
+  &_gray {
+    color: #888A93;
+  }
+  &_fz_13 {
+    font-size: 13px;
+  }
+}
+
+.text_regular {
+  font-weight: 500;
+}
+
+.text_acc {
+  color: $acc;
+}
+
+.text_small {
+  color: #888A93;
+  font-size: 0.666em;
+  line-height: 0.9em;
+}
+
+.text_warning {
+  margin: 8px 0;
+  color: $err;
+  font-weight: 700;
+}
+
+.img-text {
+  padding-left: 23px;
+  background-image: url(../img/img.svg);
+  background-repeat: no-repeat;
+  background-position: center left;
+  background-size: 16px 16px;
+  &_ok {
+    background-image: url(../img/success.svg);
+  }
+  &_question {
+    background-image: url(../img/question.svg);
+    background-position: right center;
+  }
+  &_dot_acc {
+    position: relative;
+    padding-left: 34px;
+    background: none;
+    color: $acc;
+    font-weight: 700;
+    cursor: pointer;
+    &:before {
+      position: absolute;
+      left: 14px;
+      top: calc(50% - 4px);
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background-color: $acc;
+      content: '';
+    }
+  }
+}
+
+.show {
+  display: inline-block;
+  padding-right: 10px;
+  background-image: url(../img/show.svg);
+  background-repeat: no-repeat;
+  background-position: center right;
+  font-size: 0.666rem;
+  color: #989898;
+  cursor: pointer;
+  &:before {
+    content: 'Show all';
+  }
+}
+
+.page-title {
+  margin: 0.5em 0;
+  font-weight: 700;
+  font-size: 1.777rem;
+}
+
+.h4 {
+  font-size: 1.3333rem;
+  font-weight: 700;
+  margin: 0.375em 0;
+  &__subtitle {
+    margin-bottom: 18px;
+    font-size: 1rem;
+    font-weight: 500;
+    line-height: 1.25;
+  }
+}

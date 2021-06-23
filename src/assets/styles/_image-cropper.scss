@@ -1,0 +1,39 @@
+.image-crop__title {
+  color: #fff;
+  margin-bottom: 20px;
+}
+
+.image-crop__controls {
+  display: flex;
+  justify-content: flex-end;
+}
+.image-crop__img {
+  width: 1140px;
+  height: 641px;
+}
+.image-crop__controls {
+  position: relative;
+  margin: 33px 0 0;
+  * {
+    &:not(:last-child) {
+      margin-right: 10px;
+    }
+  }
+}
+
+.image-crop__btn-rotate {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  align-items: center;
+  color: #fff;
+  font-size: 24px;
+  &:before {
+    content: '';
+    width: 39px;
+    height: 39px;
+    margin-right: 10px;
+    background-image: url(assets/img/rotate.svg);
+  }
+}

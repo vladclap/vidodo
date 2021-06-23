@@ -1,0 +1,441 @@
+@import "variables"
+
+*
+  scroll-behavior: smooth
+  ::-webkit-scrollbar
+    width: 6px
+    background: $bg
+  ::-webkit-scrollbar-thumb
+    background: #000
+
+html
+  font-size: 18px
+
+body
+  padding-bottom: 10vh
+  font-family: 'Gilroy'
+  font-weight: 500
+  color: #1E2843
+
+.delimiter
+  width: 100%
+  height: 1px
+  margin: 0.5em 0
+  background: #F2F2F2
+
+@import "text"
+@import "row"
+@import "option"
+@import "meeting-list"
+@import "block"
+@import "elem"
+@import "chek-card"
+@import "popup"
+@import "included-list"
+@import "languages-list"
+@import "yes-no"
+@import "pricing-block"
+@import "price-table"
+@import "text-toggl"
+
+
+.header
+  border-bottom: 1px solid $light
+
+.wrapper
+  width: 90%
+  max-width: 1140px
+  margin: 0 auto
+
+.btn
+  display: inline-flex
+  justify-content: center
+  align-items: center
+  padding: 0 22px
+  height: 40px
+  border-radius: 4px
+  border: 2px solid $acc
+  color: #1E2843
+  font-weight: 700
+  font-size: 16px
+  cursor: pointer
+  &:hover
+    color: $acc
+  &_primary
+    background: $acc
+    color: #fff
+    &:hover
+      color: #1E2843
+  &_big
+    height: 59px
+    min-width: 260px
+    padding: 0 44px
+    font-size: 18px
+  &_text_regular
+    font-weight: 500
+  &_text_sm
+    font-size: 14px
+
+.ul__custom
+  margin: 0.5em 0
+  li
+    position: relative
+    padding-left: 15px
+    &:not(:last-child)
+      margin-bottom: 10px
+  &_ok
+    li
+      &:before
+        content: ''
+        position: absolute
+        left: 0
+        top: 4px
+        width: 8px
+        height: 6px
+        background-image: url(../img/ok.svg)
+        background-size: cover
+  &_no
+    li
+      &:before
+        content: ''
+        position: absolute
+        left: 0
+        top: 3px
+        width: 8px
+        height: 8px
+        background-image: url(../img/no.svg)
+        background-size: cover
+
+ul.dot
+  margin: 0.5em 0
+  li
+    position: relative
+    padding-left: 13px
+    &:before
+      content: ''
+      position: absolute
+      top: calc(50% - 3px)
+      left: 0
+      width: 5px
+      height: 5px
+      background: #000
+      border-radius: 50%
+
+.header__wrapper
+  display: flex
+  justify-content: space-between
+  height: 39px
+
+.header__main
+  display: flex
+  justify-content: space-between
+  align-items: center
+
+.header__menu
+  display: flex
+  justify-content: space-between
+  margin-left: 48px
+  &-item
+    &:not(:first-child)
+      margin-left: 30px
+  &-link
+    display: flex
+    align-items: center
+    height: 40px
+    color: #000
+    font-size: 0.7777rem
+    border-bottom: 2px solid transparent
+    &:hover
+      color: $acc
+    &.active
+      font-weight: 700
+      border-bottom: 2px solid $acc
+
+.header__side
+  display: flex
+  flex-direction: column
+  justify-content: center
+  align-items: center
+
+.main
+  padding-top: 22px
+
+.back
+  margin: 1.833em 0 1.333em
+  padding-left: 9px
+  color: #AFB1B8
+  background-image: url(../img/back.svg)
+  background-repeat: no-repeat
+  background-position: center left
+  font-size: 0.6666rem
+  &:hover
+    color: #808186
+
+.map
+  width: 100%
+  height: 256px
+  margin: 0.5em 0
+  border-radius: 8px
+  background-color: #F2F1F0
+
+.tab
+  margin-top: 19px
+
+.tab__list
+  display: flex
+  border-bottom: 1px solid $light
+  font-size: 0.777rem
+
+.group
+  margin: 24px 0
+
+.tab__link
+  margin-bottom: -1px
+  padding-bottom: 6px
+  border-bottom: 2px solid transparent
+  cursor: pointer
+  &:not(:first-child)
+    margin-left: 40px
+  &.active
+    border-bottom: 2px solid $acc
+    font-weight: 700
+
+.tab__content
+  display: none
+  visibility: hidden
+  opacity: 0
+  &.active
+    display: block
+    visibility: visible
+    opacity: 1
+
+.list__item
+  display: flex
+  justify-content: space-between
+  padding: 13px 0 25px
+  &:not(:last-child)
+    border-bottom: 1px solid $light
+
+.list__item-content
+  padding-right: 40px
+
+.photos
+  display: flex
+  margin: 9px 0
+
+.photos__item
+  width: 125px
+  height: 80px
+  background: #E7E7E7
+  &:not(:first-child)
+    margin-left: 19px
+  &_empty
+    background: transparent
+    border: 1px dashed #A3A3A3
+
+.info-line
+  display: flex
+  align-items: center
+  margin: 16px 0
+
+.info-line__tags
+  display: flex
+  align-items: center
+  margin-left: 23px
+  font-size: 0.666rem
+.info-line__tag
+  position: relative
+  color: #888A93
+  &:not(:last-child)
+    margin-right: 22px
+    &:after
+      content: ''
+      position: absolute
+      right: -13px
+      top: 3px
+      width: 4px
+      height: 4px
+      background: #C4C4C4
+      border-radius: 50%
+
+.content-area
+  display: flex
+  justify-content: space-between
+  align-items: flex-start
+
+.content-area__main
+  width: 57.1%
+
+.content-area__sidebar_card
+  width: 25.7%
+  padding: 24px 32px
+  border: 1px solid #EBEBEB
+  border-radius: 14px
+
+.sidebar
+  font-size: 14px
+
+.sidebar__subtitle
+  font-size: 16px
+  font-weight: 700
+
+.sidebar__bottom-btn
+  display: flex
+  align-items: center
+  position: relative
+  top: 24px
+  height: 48px
+  margin: 0 -32px
+  padding: 0 32px
+  border-top: 1px solid $light
+  color: #ACACAD
+  &:hover
+    color: $acc
+
+.sidebar__icon
+  margin-bottom: 19px
+  &_camera
+    width: 32px
+    height: 32px
+    background-image: url(../img/camera.svg)
+    background-size: cover
+    background-position: center
+
+.photo
+  position: relative
+  width: 100%
+  margin-bottom: 22px
+  &_big
+    width: 555px
+    margin-bottom: 35px
+  &_sm
+    width: 165px
+
+.photo__area
+  position: relative
+  display: flex
+  justify-content: center
+  align-items: center
+  flex-direction: column
+  height: 114px
+  margin: 11px 0 14px
+  border: 1px dashed #AFB1B8
+  border-radius: 8px
+
+.photo_add
+  .photo__area
+    cursor: pointer
+    &:before
+      width: 100%
+      content: ''
+      height: 18px
+      margin-bottom: 9px
+      background-image: url(../img/add-plus.svg)
+      background-size: contain
+      background-position: center
+      background-repeat: no-repeat
+    &:after
+      width: 100%
+      display: flex
+      justify-content: center
+      align-items: center
+      font-weight: 700
+      content: 'Add photos'
+      transition: 0.25s
+    &:hover
+      &:after
+        color: $acc
+
+.photo_big
+  .photo__area
+    height: 350px
+
+.photo__caption
+  padding: 9px 16px
+  background: #E7E7E7
+  border-radius: 4px
+  font-size: 12px
+
+.photo__controls
+  position: absolute
+  top: 15px
+  right: 15px
+  z-index: 2
+  display: flex
+  align-items: flex-end
+  justify-content: flex-end
+
+.photo__btn
+  background-color: rgba(0,0,0,0.5)
+  border: none
+  padding: 5px 10px
+  color: #fff
+  font-size: 16px
+  font-weight: 500
+  border-radius: 4px
+  &_delete
+    &:after
+      content: ''
+      display: block
+      width: 16px
+      height: 16px
+      background-image: url(../img/trash.svg)
+      background-repeat: no-repeat
+      background-size: cover
+  &:not(:last-child)
+    margin-right: 8px
+
+.photo
+  &_big
+    .photo__caption
+      padding: 14px 18px
+      font-size: 18px
+  &_no-caption
+    .photo__caption
+      display: none
+  &_edit
+    .photo__area
+      border: none
+      background-position: center
+      background-size: cover
+
+.photo-row
+  display: flex
+  margin-bottom: 40px
+  .photo
+    margin-right: 30px
+
+.two-side__back
+  display: none
+
+.two-side__front
+  cursor: pointer
+
+.two-side.active
+  .two-side__front
+    display: none
+  .two-side__back
+    display: block
+
+.info-block
+  position: relative
+  padding: 18px 80px 18px 67px
+  border: 2px solid #FF5134
+  border-radius: 14px
+  &:before
+    content: ''
+    position: absolute
+    top: 20px
+    left: 24px
+    width: 27px
+    height: 27px
+    background-image: url(../img/info.svg)
+    background-size: cover
+
+.info-block__text
+  line-height: 1.5
+  font-size: 1rem
+  &:first-child
+    margin-top: 0
+  &:last-child
+    margin-bottom: 0

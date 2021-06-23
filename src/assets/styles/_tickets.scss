@@ -1,0 +1,72 @@
+.text-ticket{
+    position: relative;
+    padding-left: 28px;
+    &::before{
+        content: '';
+        position: absolute;
+        top: 3px;
+        bottom: 0;
+        left: 0;
+        width: 18px;
+        height: 18px;
+        background-image: url(assets/img/ticket.svg);
+        background-repeat: no-repeat;
+        background-position: center right;
+    }
+}
+
+.text-calendar{
+    position: relative;
+    padding-left: 28px;
+    &::before{
+        content: '';
+        position: absolute;
+        top: 3px;
+        bottom: 0;
+        left: -2.5px;
+        width: 18px;
+        height: 18px;
+        background-image: url(assets/img/calendar.svg);
+        background-repeat: no-repeat;
+        background-position: center right;
+    } 
+}
+
+.ticket-code{
+    p{
+        line-height: 20px;
+    }
+}
+
+.ticket__preview{
+    align-items: baseline;
+}
+
+.preview__mobile{
+    margin-top: 15px;
+    img{
+        padding-top: 26px;
+    }
+}
+
+.preview__paper{
+    margin-top: 26px;
+}
+
+.preview__paper-block{
+    text-align: right;
+    text-align: -webkit-right;
+    margin-top: 23px;
+    width: 490px;
+    height: 78px;
+    background: #E8E8E8;
+    border-radius: 5px 0 0 5px;
+    align-items: center;
+    padding: 3px;
+}
+
+.preview__paper-block-white{
+    background: white;
+    width: 217px;
+    height: 72px;
+}
